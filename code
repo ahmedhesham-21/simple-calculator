@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double num1;
+    double num2;
+    char operation;
+    string choice;
+    cout << "type(.) to run and (@) to quit" << endl;
+    cout << ">>";
+    cin >> choice;
+
+while(choice==".")
+{
+
+     cout << "Calculator" << endl;
+   cout << "                 " << endl;
+   cin >> num1 >> operation >> num2;
+
+
+   if(operation=='+')
+   {
+       cout << num1+num2 << endl;
+   }
+
+
+    else if(operation=='-')
+   {
+       cout << num1-num2 << endl;
+   }
+
+
+
+    else if(operation=='x')
+   {
+       cout << num1*num2 << endl;
+   }
+
+
+
+    else if(operation=='/')
+   {
+       cout << num1/num2 << endl;
+   }
+
+   else if(choice=="@")
+           break;
+
+
+}
+
+
+
+    return 0;
+}
